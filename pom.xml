@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>dev.bobhennessey</groupId>
 	<artifactId>comcast-exercise</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>comcast-exercise</name>
 	<description>Demo project for Comcast Exercise</description>
 	<properties>
@@ -47,7 +47,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>bobhennessey.dev/images/${project.artifactId}:${project.version}</name>
+						<name>sugaaloop/comcast-exercise</name>
 					</image>
 				</configuration>
 			</plugin>
