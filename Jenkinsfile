@@ -6,11 +6,11 @@ pipeline {
     }
 
     stages {
-        // stage('build') {
-        //     steps {
-        //         powershell './build/build.ps1'
-        //     }
-        // }
+        stage('build') {
+            steps {
+                powershell './build/build.ps1'
+            }
+        }
 
         stage('publish') {
             steps {
