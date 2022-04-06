@@ -8,16 +8,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                powershell './build/build.ps1'
+                sh './build/build.sh'
             }
         }
 
         stage('publish') {
             steps {
-                powershell 'echo username: $env:DOCKER_HUB_PSW'
-                // powershell 'write-output $env:DOCKER_HUB_PSW | docker login -u $env:DOCKER_HUB_USR --password-stdin'
-                powershell ' docker login -u $env:DOCKER_HUB_USR -p $env:DOCKER_HUB_PSW'
-                powershell './build/publish.ps1'
+                sh 'echo $DOCKER_HUB_PSW | docker login -u $DOCKER_HUB_USR --password-stdin'
+                sh './build/publish.sh'
             }
         }
     }

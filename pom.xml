@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>dev.bobhennessey</groupId>
 	<artifactId>comcast-exercise</artifactId>
-	<version>0.0.4</version>
+	<version>0.1.0</version>
 	<name>comcast-exercise</name>
 	<description>Demo project for Comcast Exercise</description>
 	<properties>
